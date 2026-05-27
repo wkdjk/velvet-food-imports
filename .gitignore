@@ -1,0 +1,45 @@
+# Environment and secrets — never commit
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Output directory
+output/
+
+# Data files — large xlsx files are not committed to the repo
+# Commander places MFDS files in data/mfds/ locally; they are processed then renamed
+data/historical/*.xlsx
+data/mfds/*.xlsx
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
